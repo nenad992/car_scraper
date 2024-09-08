@@ -12,9 +12,9 @@ To install the necessary libraries, run:
 
 ```bash
 pip install scrapy requests pandas openpyxl xlsxwriter
+'''
 
-
-Project Structure
+## Project Structure
 
 items.py: Contains the CarItem class, which defines the structure of the scraped data.
 middlewares.py: Defines custom middlewares for handling proxies and request pausing.
@@ -24,7 +24,7 @@ settings.py: Configures the Scrapy settings for the project, including middlewar
 utils.py: Provides utility functions for handling brand models, URL construction, and data sanitization.
 spiders/pa_spider.py: Contains the PolovniAutomobiliSpider class, which defines how to scrape data from the website.
 
-Getting Started
+## Getting Started
 
 1. Clone the Repository
 
@@ -43,8 +43,9 @@ Update the settings.py file if necessary to adjust configurations such as the nu
 4. Run the Spider
 
 To start scraping, run the following command:
+```bash
 scrapy crawl polovniautomobili -a bm=1
-
+'''
 The -a bm=1 argument specifies which brand models to scrape. Adjust the number as needed to target different brands/models.
 
 or
