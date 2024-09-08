@@ -5,7 +5,6 @@ from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import SoftwareType
 
 # List of available brands
-'''
 brand_models = {
         'alfa-romeo': [
             "33", "145", "146", "147", "155", "156", "156-crosswagon", "159", "164",
@@ -58,8 +57,8 @@ brand_models = {
         ],
         'dacia': [
         'dokker', 'duster', 'jogger', 'lodgy', 'logan', 'pickup', 'sandero', 'solenza',
-        'spring', stepway', 'super-nova', 'ostalo'
-        ]
+        'spring', 'stepway', 'super-nova', 'ostalo'
+        ],
         'ford': [
             "b-max", "c-max", "capri", "cortina", "courier", "ecosport",
             "edge", "escort", "expedition", "explorer", "falcon", "festiva",
@@ -273,18 +272,8 @@ brand_models = {
             "praktik", "rapid", "roomster", "scala", "superb", "yeti",
             "ostalo"
         ]
-}'''
-brand_models = {
-'ford': [
-            "b-max", "c-max", "capri", "cortina", "courier", "ecosport",
-            "edge", "escort", "expedition", "explorer", "falcon", "festiva",
-            "fiesta", "focus", "fusion", "galaxy", "granada", "grand-c-max",
-            "ka", "ka+", "kuga", "maverick", "mondeo", "mustang", "orion",
-            "probe", "puma", "ranger", "s-max", "scorpio", "xierra",
-            "street-ka", "Taunus", "taurus", "tourneo", "tourneo-connect",
-            "tourneo-courier", "tourneo-custom", "ostalo"
-        ],
 }
+
 def get_brand_models(index: int, brand_models = brand_models) -> dict: # 38 brands
     brands = list(brand_models.keys())
     # Check if the index is valid
