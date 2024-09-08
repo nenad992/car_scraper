@@ -1,0 +1,21 @@
+import scrapy
+
+class CarItem(scrapy.Item):
+    id = scrapy.Field()
+    brand = scrapy.Field()
+    model = scrapy.Field()
+    title = scrapy.Field()
+    current_price = scrapy.Field()
+    old_price = scrapy.Field()
+    currency = scrapy.Field()
+    mileage = scrapy.Field()
+    location = scrapy.Field()
+    year_produced = scrapy.Field()
+    car_type = scrapy.Field()
+    posted_date = scrapy.Field()
+    fuel = scrapy.Field()
+    ccm = scrapy.Field()
+    kw = scrapy.Field()
+    hp = scrapy.Field()
+    url = scrapy.Field()
+    scraped = scrapy.Field()
